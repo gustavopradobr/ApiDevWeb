@@ -39,11 +39,11 @@ Body:
 {
         "title": "Título do post",
         "content": "Esse aqui é o conteúdo do post",
-        "authorId": 1, //ID do usuário criador do post
+        "authorId": 1,
         "published": true
 }
 ```
-Onde 
+Onde `authorId` é o ID do usuário criador do post
 ### Listar posts
 Requisição (GET):
 ```
@@ -62,9 +62,10 @@ Body:
 ```json
 {
         "content": "Este é o conteúdo do comentario do post",
-        "postId": 3 //ID do post em que o comentário será adicionado
+        "postId": 3
 }
 ```
+Onde `postId` é o ID do post em que o comentário será adicionado
 
 ### Listar comentários por post
 Requisição (GET):
